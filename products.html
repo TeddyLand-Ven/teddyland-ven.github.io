@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>产品汇集 - 毛绒梦工坊</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">🧸 毛绒梦工坊</div>
+        <ul class="nav-links">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="products.html" class="active">产品汇集</a></li>
+            <li><a href="about.html">关于我们</a></li>
+            <li><a href="contact.html">联系我们</a></li>
+        </ul>
+        <div class="hamburger">☰</div>
+    </nav>
+
+    <main class="products-page">
+        <h1>产品汇集</h1>
+        <p class="subtitle">点击图片上传区域，添加你的产品照片</p>
+
+        <!-- 分类1：玩偶角色图案汇集 -->
+        <section class="product-section" id="characters">
+            <h2>🧸 玩偶角色图案汇集</h2>
+            <div class="upload-area" onclick="openUploadGuide()">
+                <div class="upload-icon">📷</div>
+                <p>点击这里查看图片上传教程</p>
+                <small>支持使用免费图床添加图片</small>
+            </div>
+            <div class="product-grid" id="character-grid">
+                <!-- 示例产品，你可以复制这个模板添加更多 -->
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x300/ff6b9d/ffffff?text=小熊玩偶" alt="小熊玩偶">
+                    <h3>经典泰迪熊</h3>
+                    <p>柔软绒毛，高度30cm</p>
+                    <span class="price">¥128</span>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x300/4ecdc4/ffffff?text=兔子玩偶" alt="兔子玩偶">
+                    <h3>长耳兔萌萌</h3>
+                    <p>垂耳设计，高度25cm</p>
+                    <span class="price">¥98</span>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x300/ffe66d/ffffff?text=猫咪玩偶" alt="猫咪玩偶">
+                    <h3>慵懒猫咪</h3>
+                    <p>仿真造型，高度20cm</p>
+                    <span class="price">¥88</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 分类2：玩偶衣服汇集 -->
+        <section class="product-section" id="clothes">
+            <h2>👗 玩偶衣服汇集</h2>
+            <div class="upload-area" onclick="openUploadGuide()">
+                <div class="upload-icon">📷</div>
+                <p>点击这里查看图片上传教程</p>
+            </div>
+            <div class="product-grid" id="clothes-grid">
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x300/ff9ecd/ffffff?text=公主裙" alt="公主裙">
+                    <h3>粉色公主裙套装</h3>
+                    <p>适合30cm玩偶，含头饰</p>
+                    <span class="price">¥68</span>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x300/a8e6cf/ffffff?text=小西装" alt="小西装">
+                    <h3>绅士小西装</h3>
+                    <p>适合25-30cm玩偶，三件套</p>
+                    <span class="price">¥78</span>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x300/c7ceea/ffffff?text=和服" alt="和服">
+                    <h3>日式和服套装</h3>
+                    <p>手工制作，适合20cm玩偶</p>
+                    <span class="price">¥88</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 分类3：纪念品汇集 -->
+        <section class="product-section" id="souvenirs">
+            <h2>🎁 纪念品汇集</h2>
+            <div class="upload-area" onclick="openUploadGuide()">
+                <div class="upload-icon">📷</div>
+                <p>点击这里查看图片上传教程</p>
+            </div>
+            <div class="product-grid" id="souvenirs-grid">
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x300/fd79a8/ffffff?text=限定款" alt="限定款">
+                    <h3>2026春节限定款</h3>
+                    <p>限量100只，附收藏证书</p>
+                    <span class="price">¥268</span>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x300/fdcb6e/ffffff?text=钥匙扣" alt="钥匙扣">
+                    <h3>迷你玩偶钥匙扣</h3>
+                    <p>多款可选，高度8cm</p>
+                    <span class="price">¥38</span>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x300/6c5ce7/ffffff?text=礼盒" alt="礼盒">
+                    <h3>生日惊喜礼盒</h3>
+                    <p>含玩偶+衣服+贺卡</p>
+                    <span class="price">¥188</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 图片上传教程弹窗 -->
+    <div class="modal" id="uploadModal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>📸 如何添加你的产品图片</h2>
+            <div class="guide-steps">
+                <div class="step">
+                    <span class="step-num">1</span>
+                    <p>访问 <a href="https://imgur.com" target="_blank">imgur.com</a> 或 <a href="https://sm.ms" target="_blank">sm.ms</a>（免费图床）</p>
+                </div>
+                <div class="step">
+                    <span class="step-num">2</span>
+                    <p>上传你的图片，获取图片链接（以 .jpg 或 .png 结尾）</p>
+                </div>
+                <div class="step">
+                    <span class="step-num">3</span>
+                    <p>在代码中找到 <code>src="..."</code>，替换为你的图片链接</p>
+                </div>
+                <div class="step">
+                    <span class="step-num">4</span>
+                    <p>修改产品名称和价格，提交到 GitHub 即可更新</p>
+                </div>
+            </div>
+            <p class="tip">💡 小贴士：你也可以直接在微信/QQ发送图片，然后复制图片链接使用</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>毛绒梦工坊 © 2026 | 温暖你的每一天 🧸</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

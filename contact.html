@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我们 - 毛绒梦工坊</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">🧸 毛绒梦工坊</div>
+        <ul class="nav-links">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="products.html">产品汇集</a></li>
+            <li><a href="about.html">关于我们</a></li>
+            <li><a href="contact.html" class="active">联系我们</a></li>
+        </ul>
+        <div class="hamburger">☰</div>
+    </nav>
+
+    <main class="contact-page">
+        <h1>联系我们</h1>
+
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>📞 联系方式</h2>
+                <div class="contact-item">
+                    <span class="contact-icon">📱</span>
+                    <div>
+                        <h3>微信/手机号</h3>
+                        <p>138-0000-0000（请替换为你的真实号码）</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">💬</span>
+                    <div>
+                        <h3>微信公众号</h3>
+                        <p>毛绒梦工坊官方号（请替换）</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">📧</span>
+                    <div>
+                        <h3>电子邮箱</h3>
+                        <p>hello@plushdream.com（请替换）</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">📍</span>
+                    <div>
+                        <h3>实体店地址</h3>
+                        <p>北京市朝阳区三里屯太古里南区 S2-11</p>
+                    </div>
+                </div>
+
+                <div class="qr-code">
+                    <img src="https://via.placeholder.com/200x200/ff9ecd/ffffff?text=微信二维码" alt="微信二维码">
+                    <p>扫码关注公众号 ⬆️ 替换为你的二维码</p>
+                </div>
+            </div>
+
+            <div class="contact-form-section">
+                <h2>✉️ 在线留言</h2>
+                <p class="form-note">此表单为演示用途，实际使用建议接入表单服务（如金数据、腾讯问卷）</p>
+                <form class="contact-form" onsubmit="event.preventDefault(); alert('留言已收到！我们会尽快联系您！');">
+                    <div class="form-group">
+                        <label>您的姓名</label>
+                        <input type="text" placeholder="请输入姓名" required>
+                    </div>
+                    <div class="form-group">
+                        <label>联系电话</label>
+                        <input type="tel" placeholder="请输入手机号" required>
+                    </div>
+                    <div class="form-group">
+                        <label>留言内容</label>
+                        <textarea rows="5" placeholder="请描述您的需求..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">提交留言</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>毛绒梦工坊 © 2026 | 温暖你的每一天 🧸</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
